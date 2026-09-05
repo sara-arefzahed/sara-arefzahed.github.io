@@ -5,7 +5,48 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sara Aref-Zahed</title>
+<title>Sara Aref-Zahed | Interdisciplinary Researcher</title>
+
+<meta
+    name="description"
+    content="Sara Aref-Zahed is an early-career interdisciplinary researcher working at the intersection of conservation, political ecology, and more-than-human governance."
+>
+
+<meta
+    name="author"
+    content="Sara Aref-Zahed"
+>
+
+<meta
+    name="robots"
+    content="index, follow"
+>
+
+<link
+    rel="canonical"
+    href="https://sara-arefzahed.github.io/"
+>
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sara Aref-Zahed",
+    "url": "https://sara-arefzahed.github.io/",
+    "jobTitle": "Early-career interdisciplinary researcher",
+    "affiliation": {
+        "@type": "Organization",
+        "name": "Austrian Institute of Economic Research (WIFO)"
+    },
+    "sameAs": [
+        "https://www.linkedin.com/in/sara-aref-zahed-a6959b1b7/",
+        "https://www.researchgate.net/profile/Sara-Aref-Zahed-2?ev=hdr_xprf",
+        "https://www.instagram.com/sara.aref.zahed/"
+    ]
+}
+</script>
+
 
 <style>
 
@@ -41,7 +82,7 @@ header {
 
 
 /* =========================================================
-   ABOUT SECTION
+   ABOUT
    ========================================================= */
 
 .about {
@@ -51,15 +92,14 @@ header {
     padding: 65px 8% 90px;
 
     display: grid;
+
     grid-template-columns: 1.35fr 0.85fr;
 
-    gap: 110px;
+    gap: 80px;
 
     align-items: center;
 }
 
-
-/* Name */
 
 .hero-name {
     margin: 0 0 30px;
@@ -67,13 +107,12 @@ header {
     font-family: "Times New Roman", Times, serif;
 
     font-size: 43px;
+
     line-height: 1.1;
 
     font-weight: normal;
 }
 
-
-/* Intro text */
 
 .about-text {
     max-width: 760px;
@@ -81,6 +120,7 @@ header {
     font-family: "Times New Roman", Times, serif;
 
     font-size: 23px;
+
     line-height: 1.55;
 
     text-align: left;
@@ -98,12 +138,16 @@ header {
 
     object-fit: cover;
 
+    object-position: center;
+
     display: block;
+
+    border: 1px solid #594431;
 }
 
 
 /* =========================================================
-   CV BUTTON
+   CV
    ========================================================= */
 
 .cv-wrapper {
@@ -111,6 +155,7 @@ header {
 
     text-align: center;
 }
+
 
 .cv-button {
     display: inline-block;
@@ -132,13 +177,14 @@ header {
     font-size: 16px;
 }
 
+
 .cv-button:hover {
     opacity: 0.82;
 }
 
 
 /* =========================================================
-   PUBLICATIONS + THESES SECTION
+   PUBLICATIONS + THESES
    ========================================================= */
 
 .research {
@@ -157,7 +203,8 @@ header {
 
     grid-template-columns: 1fr 1fr;
 
-    gap: 8px;
+    /* approximately 0.5 cm */
+    column-gap: 19px;
 
     align-items: stretch;
 }
@@ -201,11 +248,13 @@ header {
 
 
 .publications-box {
-    flex: 1;
+    flex: 1 1 auto;
 }
 
 
 .theses-box {
+    flex: 0 0 auto;
+
     padding-bottom: 34px;
 }
 
@@ -269,15 +318,23 @@ header {
 .research-image {
     width: 100%;
 
-    flex: 1;
+    /*
+       The image fills the remaining height beneath
+       the shorter Theses box.
+    */
+    flex: 1 1 0;
 
-    min-height: 230px;
+    min-height: 0;
 
-    margin-top: 8px;
+    margin-top: 5px;
 
     object-fit: cover;
 
+    object-position: center;
+
     display: block;
+
+    border: 1px solid #594431;
 }
 
 
@@ -320,8 +377,6 @@ footer {
     text-decoration: none;
 
     font-family: "Times New Roman", Times, serif;
-
-    text-decoration: none;
 }
 
 
@@ -364,8 +419,6 @@ footer {
         font-size: 19px;
 
         line-height: 1.5;
-
-        text-align: left;
     }
 
 
@@ -391,7 +444,9 @@ footer {
     .columns {
         grid-template-columns: 1fr;
 
-        gap: 45px;
+        row-gap: 45px;
+
+        column-gap: 0;
     }
 
 
@@ -406,7 +461,11 @@ footer {
 
 
     .research-image {
+        flex: none;
+
         min-height: 250px;
+
+        margin-top: 5px;
     }
 
 
@@ -431,14 +490,15 @@ footer {
 <header></header>
 
 
-
 <!-- =====================================================
      ABOUT
      ===================================================== -->
 
 <section class="about">
 
+
     <div>
+
 
         <h1 class="hero-name">
             Sara Aref-Zahed
@@ -463,10 +523,13 @@ footer {
                 href="CV_Aref-Zahed.pdf"
                 target="_blank"
                 rel="noopener">
+
                 CV
+
             </a>
 
         </div>
+
 
     </div>
 
@@ -480,6 +543,7 @@ footer {
 
     </div>
 
+
 </section>
 
 
@@ -490,6 +554,7 @@ footer {
 
 <section class="research">
 
+
 <div class="columns">
 
 
@@ -498,6 +563,7 @@ footer {
      ===================================================== -->
 
 <div class="column">
+
 
 <h2 class="section-title">
 Publications
@@ -523,7 +589,9 @@ Austria’, <span class="publication-title">Nature and Culture</span>.
 Aref-Zahed, S. (in press)
 ‘Sacred Hydrology as Policy: Iranian Traditions of Water Governance’, in
 Mandal, P.K. &amp; Topoonyanont, W.S. (eds)
-<span class="publication-title">The Ecospiritual Narratives: Literature, Culture, and Media</span>.
+<span class="publication-title">
+The Ecospiritual Narratives: Literature, Culture, and Media
+</span>.
 Palgrave Macmillan.
 </p>
 
@@ -532,10 +600,11 @@ Palgrave Macmillan.
 Aref-Zahed, S. (forthcoming)
 ‘hamnafas (هم‌نفس / co-breather)’, in
 Burke, B. &amp; Fay-Stindt, Z. (eds)
-<span class="publication-title">A Lexicon for Animacy</span>.
+<span class="publication-title">
+A Lexicon for Animacy
+</span>.
 Publisher to be confirmed.
 </p>
-
 
 
 <p class="status">
@@ -547,7 +616,9 @@ Under Review:
 Aref-Zahed, S. (under review)
 ‘Eco-Biopolitics and the Governance of More-Than-Human Life:
 Technocratic and Relational Configurations in the EU and Ecuador’,
-<span class="publication-title">Environment and Planning E: Nature and Space</span>.
+<span class="publication-title">
+Environment and Planning E: Nature and Space
+</span>.
 </p>
 
 
@@ -555,7 +626,9 @@ Technocratic and Relational Configurations in the EU and Ecuador’,
 Aref-Zahed, S. (under review; proposal accepted)
 ‘Eco-biopolitics: Resurrectable life and de-extinction’, in
 Stark, H. (ed.)
-<span class="publication-title">Resurrecting Species: Speculative Engagements with De-Extinction</span>.
+<span class="publication-title">
+Resurrecting Species: Speculative Engagements with De-Extinction
+</span>.
 Open Humanities Press.
 </p>
 
@@ -563,14 +636,20 @@ Open Humanities Press.
 <p>
 Aref-Zahed, S. (under review; proposal accepted)
 ‘Eco-Biopolitics and the Governance of Plant Life in
-<span class="publication-title">The Overstory</span>’, in
+<span class="publication-title">
+The Overstory
+</span>’, in
 Gürova, E. (ed.)
-<span class="publication-title">The Plant Turn: Literature, Ecology, and the Green Imagination across Periods</span>.
-Publisher to be confirmed (under strong interest by Bloomsbury Academic’s Critical Plant Studies).
+<span class="publication-title">
+The Plant Turn: Literature, Ecology, and the Green Imagination across Periods
+</span>.
+Publisher to be confirmed (under strong interest by Bloomsbury Academic’s
+Critical Plant Studies).
 </p>
 
 
 </div>
+
 
 </div>
 
@@ -582,6 +661,7 @@ Publisher to be confirmed (under strong interest by Bloomsbury Academic’s Crit
 
 <div class="column">
 
+
 <h2 class="section-title">
 Theses
 </h2>
@@ -591,6 +671,7 @@ Theses
 
 
 <div class="thesis">
+
 
 <p class="thesis-title">
 The Birth of Eco-Biopolitics: Bringing More-than-human Life into Governance
@@ -620,11 +701,13 @@ https://doi.org/10.25365/thesis.81485
 
 </p>
 
+
 </div>
 
 
 
 <div class="thesis">
+
 
 <p class="thesis-title">
 Dynamics of Reappearance of Nearly Extinct Anurans in a Tropical
@@ -657,10 +740,12 @@ https://doi.org/10.25365/thesis.81590
 
 </p>
 
+
 </div>
 
 
 </div>
+
 
 
 <!-- =====================================================
@@ -677,6 +762,7 @@ https://doi.org/10.25365/thesis.81590
 
 
 </div>
+
 
 </section>
 
