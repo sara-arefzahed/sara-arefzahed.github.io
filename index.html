@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,9 @@
 <title>Sara Aref-Zahed</title>
 
 <style>
+
+/* ---------- GENERAL ---------- */
+
 * {
     box-sizing: border-box;
 }
@@ -17,291 +21,417 @@ html {
 
 body {
     margin: 0;
-    color: #29251f;
-    background: #eee7dc;
-    font-family: Arial, Helvetica, sans-serif;
+    color: #30271f;
+    background: #f4e6d2;
+    font-family: "Times New Roman", Times, serif;
     line-height: 1.5;
 }
 
-/* HEADER */
+
+/* ---------- TOP SPACE ---------- */
 
 header {
-    height: 95px;
-    padding: 0 3%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #f5f1e9;
-    border-bottom: 1px solid #d7d0c5;
+    height: 55px;
+    background: #f4e6d2;
 }
 
-.name {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 31px;
-    text-decoration: none;
-    color: #29251f;
-}
 
-nav {
-    display: flex;
-    gap: 48px;
-}
-
-nav a {
-    color: #29251f;
-    text-decoration: none;
-    font-size: 15px;
-}
-
-nav a:hover {
-    opacity: 0.55;
-}
-
-/* ABOUT */
+/* ---------- ABOUT ---------- */
 
 .about {
     max-width: 1420px;
-    margin: auto;
-    padding: 95px 8% 100px;
+    margin: 0 auto;
+
+    padding: 65px 8% 90px;
+
     display: grid;
     grid-template-columns: 1.35fr 0.85fr;
-    gap: 120px;
+
+    gap: 110px;
+
     align-items: center;
 }
 
-.about-text {
-    font-size: 23px;
-    line-height: 1.55;
-    max-width: 760px;
-    text-align: justify;
+
+.hero-name {
+    margin: 0 0 30px;
+
+    font-size: 43px;
+    line-height: 1.1;
+
+    font-weight: normal;
 }
+
+
+.about-text {
+    max-width: 760px;
+
+    font-size: 24px;
+    line-height: 1.55;
+}
+
+
+/* ---------- PORTRAIT ---------- */
 
 .portrait-placeholder {
     width: 100%;
+
     aspect-ratio: 1.5 / 1;
-    background: #d5cec3;
+
+    background: #ddc3a4;
+
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-family: Georgia, serif;
-    color: #746b60;
+    justify-content: center;
+
+    color: #77604b;
+
+    font-size: 18px;
 }
 
+
+/* ---------- CV BUTTON ---------- */
+
 .cv-wrapper {
-    margin-top: 60px;
+    margin-top: 50px;
     text-align: center;
 }
 
 .cv-button {
     display: inline-block;
+
     min-width: 280px;
-    padding: 20px 55px;
+
+    padding: 18px 55px;
+
     border-radius: 50px;
-    background: #342f29;
-    color: white;
+
+    background: #453528;
+    color: #fffaf3;
+
     text-decoration: none;
-    font-size: 15px;
+
+    font-size: 16px;
 }
 
 .cv-button:hover {
     opacity: 0.82;
 }
 
-/* RESEARCH */
+
+/* ---------- RESEARCH AREA ---------- */
 
 .research {
-    background: #bba58e;
-    padding: 42px 4% 45px;
+    background: #c5a17e;
+
+    padding: 42px 4% 48px;
 }
+
 
 .columns {
     max-width: 1650px;
-    margin: auto;
+
+    margin: 0 auto;
+
     display: grid;
+
     grid-template-columns: 1fr 1fr;
+
     gap: 8px;
+
+    align-items: stretch;
 }
+
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ---------- HEADINGS ---------- */
 
 .section-title {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 34px;
-    font-weight: normal;
+    margin: 0 0 12px;
+
     text-align: center;
-    margin: 0 0 10px;
+
+    font-size: 35px;
+
+    font-weight: normal;
 }
 
+
+/* ---------- PUBLICATION / THESIS BOXES ---------- */
+
 .box {
-    border: 1px solid #4b443b;
-    padding: 52px 70px;
-    min-height: 600px;
-    background: rgba(255,255,255,0.08);
+    border: 1px solid #594431;
+
+    padding: 50px 65px;
+
+    background: rgba(255, 247, 235, 0.10);
 }
+
+
+.publications-box {
+    flex: 1;
+}
+
+
+.theses-box {
+    padding-bottom: 34px;
+}
+
 
 .box p {
     margin: 0 0 20px;
-    font-size: 15px;
+
+    font-size: 17px;
+
+    line-height: 1.45;
 }
+
 
 .box a {
     color: inherit;
 }
 
+
 .status {
     font-weight: bold;
-    margin-top: 0;
 }
+
 
 .publication-title {
     font-style: italic;
 }
 
-/* THESIS */
+
+/* ---------- THESES ---------- */
 
 .thesis {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
+
+
+.thesis:last-child {
+    margin-bottom: 0;
+}
+
 
 .thesis-title {
     font-weight: bold;
 }
 
+
 .thesis p {
     margin: 0;
+    line-height: 1.45;
 }
 
-/* SECOND IMAGE */
+
+/* ---------- RESEARCH IMAGE ---------- */
+
+/*
+This sits underneath the smaller thesis box.
+
+Once your real image is added, the placeholder
+will be replaced by an <img>.
+*/
 
 .field-placeholder {
-    max-width: 680px;
-    height: 270px;
-    margin: 55px auto 0;
-    background: #a58f77;
+    flex: 1;
+
+    min-height: 230px;
+
+    margin-top: 8px;
+
+    background: #a98462;
+
     display: flex;
-    justify-content: center;
+
     align-items: center;
-    font-family: Georgia, serif;
-    color: #eee7dc;
+    justify-content: center;
+
+    color: #f5e8d8;
+
+    font-size: 18px;
 }
 
-/* FOOTER */
+
+/* ---------- FOOTER ---------- */
 
 footer {
-    background: #eee7dc;
     min-height: 130px;
+
     padding: 38px 4%;
+
+    background: #f4e6d2;
+
     text-align: right;
 }
 
+
 .email {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 27px;
+    color: #30271f;
+
     text-decoration: none;
-    color: #29251f;
+
+    font-size: 27px;
 }
+
 
 .links {
     margin-top: 10px;
 }
 
+
 .links a {
-    color: #29251f;
     margin-left: 18px;
+
+    color: #30271f;
+
     text-decoration: none;
 }
 
-/* MOBILE */
+
+.links a:hover,
+.email:hover {
+    opacity: 0.6;
+}
+
+
+/* ---------- MOBILE ---------- */
 
 @media (max-width: 800px) {
 
     header {
-        height: auto;
-        padding: 25px;
+        height: 25px;
     }
 
-    .name {
-        font-size: 24px;
-    }
-
-    nav {
-        gap: 18px;
-    }
 
     .about {
         display: flex;
+
         flex-direction: column;
-        padding: 60px 8%;
-        gap: 50px;
+
+        padding: 45px 8% 65px;
+
+        gap: 45px;
     }
 
-    .about-text {
-        font-size: 19px;
-        text-align: left;
+
+    .hero-name {
+        margin-bottom: 24px;
+
+        font-size: 36px;
     }
+
+
+    .about-text {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
 
     .portrait-placeholder {
         width: 100%;
     }
 
+
     .cv-wrapper {
         margin-top: 35px;
+
+        text-align: left;
     }
 
+
     .cv-button {
-        min-width: 220px;
+        min-width: 210px;
+
+        text-align: center;
     }
+
 
     .columns {
         grid-template-columns: 1fr;
+
         gap: 45px;
     }
 
+
     .box {
-        min-height: auto;
-        padding: 35px 25px;
+        padding: 35px 27px;
     }
 
+
     .section-title {
-        font-size: 29px;
+        font-size: 31px;
     }
+
+
+    .field-placeholder {
+        min-height: 250px;
+    }
+
 
     footer {
         text-align: center;
     }
 
+
     .email {
-        font-size: 19px;
+        font-size: 20px;
     }
+
 }
+
 </style>
 </head>
 
+
 <body>
 
-<header>
-    <a class="name" href="#">Sara Aref-Zahed</a>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+<!-- TOP -->
+
+<header></header>
 
 
-<section class="about" id="about">
+
+<!-- ABOUT -->
+
+<section class="about">
 
     <div>
+
+        <h1 class="hero-name">
+            Sara Aref-Zahed
+        </h1>
+
+
         <div class="about-text">
+
             I am an early-career interdisciplinary researcher working at the
             intersection of conservation, political ecology, and more-than-human
             governance. My research explores how ecological change becomes
-            political, and how human societies govern, protect, and coexist with
-            more-than-human life.
+            political, and how human societies govern, protect, and coexist
+            with more-than-human life.
+
         </div>
 
+
         <div class="cv-wrapper">
-            <a class="cv-button" href="#">CV</a>
+
+            <a class="cv-button" href="#">
+                CV
+            </a>
+
         </div>
+
     </div>
+
+
 
     <div class="portrait-placeholder">
         Portrait
@@ -310,153 +440,264 @@ footer {
 </section>
 
 
+
+<!-- PUBLICATIONS + THESES -->
+
 <section class="research">
+
 
 <div class="columns">
 
-    <!-- PUBLICATIONS -->
-
-    <div>
-
-        <h2 class="section-title">Publications</h2>
-
-        <div class="box">
-
-            <p class="status">Forthcoming / In press:</p>
-
-            <p>
-                Aref-Zahed, S. (forthcoming)
-                ‘The Wolf as Political Symbol: Populist Style and Exclusionary
-                Governance in Austria’,
-                <span class="publication-title">Nature and Culture</span>.
-            </p>
-
-            <p>
-                Aref-Zahed, S. (in press)
-                ‘Sacred Hydrology as Policy: Iranian Traditions of Water Governance’,
-                in Mandal, P.K. &amp; Topoonyanont, W.S. (eds)
-                <span class="publication-title">
-                    The Ecospiritual Narratives: Literature, Culture, and Media
-                </span>.
-                Palgrave Macmillan.
-            </p>
-
-            <p>
-                Aref-Zahed, S. (forthcoming)
-                ‘hamnafas (هم‌نفس / co-breather)’,
-                in Burke, B. &amp; Fay-Stindt, Z. (eds)
-                <span class="publication-title">A Lexicon for Animacy</span>.
-            </p>
 
 
-            <p class="status">Under Review:</p>
+<!-- LEFT COLUMN -->
 
-            <p>
-                Aref-Zahed, S. (under review)
-                ‘Eco-Biopolitics and the Governance of More-Than-Human Life:
-                Technocratic and Relational Configurations in the EU and Ecuador’,
-                <span class="publication-title">
-                    Environment and Planning E: Nature and Space
-                </span>.
-            </p>
-
-            <p>
-                Aref-Zahed, S. (under review)
-                ‘Eco-biopolitics: Resurrectable life and de-extinction’,
-                in Stark, H. (ed.)
-                <span class="publication-title">
-                    Resurrecting Species: Speculative Engagements with De-Extinction
-                </span>.
-            </p>
-
-            <p>
-                Aref-Zahed, S. (under review)
-                ‘Eco-biopolitics and the Governance of Plant Life in
-                <span class="publication-title">The Overstory</span>’.
-            </p>
-
-        </div>
-    </div>
+<div class="column">
 
 
-    <!-- THESES -->
-
-    <div>
-
-        <h2 class="section-title">Theses</h2>
-
-        <div class="box">
-
-            <div class="thesis">
-
-                <p class="thesis-title">
-                    The Birth of Eco-Biopolitics: Bringing More-than-human Life into Governance
-                </p>
-
-                <p>MA Political Science, University of Vienna, 2026</p>
-
-                <p>Supervisor: Sergej Seitz, PhD</p>
-
-                <p>
-                    <a href="https://doi.org/10.25365/thesis.81485"
-                       target="_blank" rel="noopener">
-                        https://doi.org/10.25365/thesis.81485
-                    </a>
-                </p>
-
-            </div>
+<h2 class="section-title">
+Publications
+</h2>
 
 
-            <div class="thesis">
+<div class="box publications-box">
 
-                <p class="thesis-title">
-                    Dynamics of Reappearance of Nearly Extinct Anurans in a Tropical
-                    Region Highly Affected by Amphibian Declines
-                </p>
 
-                <p>
-                    MSc Conservation Biology and Biodiversity Management,
-                    University of Vienna, 2026
-                </p>
+<p class="status">
+Forthcoming / In press:
+</p>
 
-                <p>
-                    Supervisors: Prof. Franz Essl &amp; Carlos Adrián García-Rodríguez, PhD
-                </p>
 
-                <p>
-                    <a href="https://doi.org/10.25365/thesis.81590"
-                       target="_blank" rel="noopener">
-                        https://doi.org/10.25365/thesis.81590
-                    </a>
-                </p>
+<p>
 
-            </div>
+Aref-Zahed, S. (forthcoming)
+‘The Wolf as Political Symbol: Populist Style and Exclusionary Governance in Austria’,
+<span class="publication-title">
+Nature and Culture
+</span>.
 
-        </div>
+</p>
 
-        <div class="field-placeholder">
-            Research image
-        </div>
 
-    </div>
+<p>
+
+Aref-Zahed, S. (in press)
+‘Sacred Hydrology as Policy: Iranian Traditions of Water Governance’,
+in Mandal, P.K. &amp; Topoonyanont, W.S. (eds)
+<span class="publication-title">
+The Ecospiritual Narratives: Literature, Culture, and Media
+</span>.
+Palgrave Macmillan.
+
+</p>
+
+
+<p>
+
+Aref-Zahed, S. (forthcoming)
+‘hamnafas (هم‌نفس / co-breather)’,
+in Burke, B. &amp; Fay-Stindt, Z. (eds)
+<span class="publication-title">
+A Lexicon for Animacy
+</span>.
+
+</p>
+
+
+
+<p class="status">
+Under Review:
+</p>
+
+
+<p>
+
+Aref-Zahed, S. (under review)
+‘Eco-Biopolitics and the Governance of More-Than-Human Life:
+Technocratic and Relational Configurations in the EU and Ecuador’,
+<span class="publication-title">
+Environment and Planning E: Nature and Space
+</span>.
+
+</p>
+
+
+<p>
+
+Aref-Zahed, S. (under review)
+‘Eco-biopolitics: Resurrectable life and de-extinction’,
+in Stark, H. (ed.)
+<span class="publication-title">
+Resurrecting Species: Speculative Engagements with De-Extinction
+</span>.
+
+</p>
+
+
+<p>
+
+Aref-Zahed, S. (under review)
+‘Eco-biopolitics and the Governance of Plant Life in
+<span class="publication-title">
+The Overstory
+</span>’.
+
+</p>
+
 
 </div>
+
+</div>
+
+
+
+<!-- RIGHT COLUMN -->
+
+<div class="column">
+
+
+<h2 class="section-title">
+Theses
+</h2>
+
+
+<div class="box theses-box">
+
+
+<div class="thesis">
+
+<p class="thesis-title">
+
+The Birth of Eco-Biopolitics:
+Bringing More-than-human Life into Governance
+
+</p>
+
+
+<p>
+MA Political Science, University of Vienna, 2026
+</p>
+
+
+<p>
+Supervisor: Sergej Seitz, PhD
+</p>
+
+
+<p>
+
+<a
+href="https://doi.org/10.25365/thesis.81485"
+target="_blank"
+rel="noopener">
+
+https://doi.org/10.25365/thesis.81485
+
+</a>
+
+</p>
+
+</div>
+
+
+
+<div class="thesis">
+
+<p class="thesis-title">
+
+Dynamics of Reappearance of Nearly Extinct Anurans
+in a Tropical Region Highly Affected by Amphibian Declines
+
+</p>
+
+
+<p>
+
+MSc Conservation Biology and Biodiversity Management,
+University of Vienna, 2026
+
+</p>
+
+
+<p>
+
+Supervisors:
+Prof. Franz Essl &amp;
+Carlos Adrián García-Rodríguez, PhD
+
+</p>
+
+
+<p>
+
+<a
+href="https://doi.org/10.25365/thesis.81590"
+target="_blank"
+rel="noopener">
+
+https://doi.org/10.25365/thesis.81590
+
+</a>
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+<!-- IMAGE WILL GO HERE -->
+
+<div class="field-placeholder">
+
+Research image
+
+</div>
+
+
+</div>
+
+
+</div>
+
 
 </section>
 
 
-<footer id="contact">
 
-    <a class="email" href="mailto:sara.arefzahed@anthro.ox.ac.uk">
-        sara.arefzahed@anthro.ox.ac.uk
-    </a>
+<!-- CONTACT -->
 
-    <div class="links">
-        <a href="#">Instagram</a>
-        <a href="#">LinkedIn</a>
-    </div>
+<footer>
+
+
+<a
+class="email"
+href="mailto:sara.arefzahed@anthro.ox.ac.uk">
+
+sara.arefzahed@anthro.ox.ac.uk
+
+</a>
+
+
+<div class="links">
+
+<a href="#">
+Instagram
+</a>
+
+<a href="#">
+LinkedIn
+</a>
+
+</div>
+
 
 </footer>
 
+
 </body>
+
 </html>
